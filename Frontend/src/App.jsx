@@ -7,7 +7,9 @@ import Register from './pages/Signup';
 import Login from './pages/Login';
 import StudentDashboard from './pages/StudentDashboard';
 import StudentDetails from './pages/StudentDetails';
+import Feedback from './pages/Feedback';
 function App() {
+
   
 
   return (
@@ -18,6 +20,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/home" element={<StudentDashboard />} />
       <Route path="/student-details" element={<StudentDetails />} />
+      <Route path="/feedback" element={<Feedback />} />
       </Routes>
     
     </>
