@@ -9,7 +9,7 @@ const Signup = () => {
   const [role, setRole] = useState("student"); // default role
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
+  // localStorage.setItem("token", data.token);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -21,13 +21,13 @@ const Signup = () => {
 
     try {
       const response = await axios.post(`${backendURL}/api/auth/signup`, {
-  username: username.trim(),
-  email: email.trim(),
-  password,
-  role,
-});
+        username: username.trim(),
+        email: email.trim(),
+        password,
+        role,
+      });
 
-    
+
 
       console.log("Axios response:", response.data);
 
@@ -51,8 +51,12 @@ const Signup = () => {
       {/* Left Section */}
       <div className="hidden lg:flex lg:w-1/2 flex-col justify-center items-center p-10">
         <div className="max-w-md text-center">
-          <div className="flex justify-center mb-8">
-            <img src="/public/login.jpg" alt="login" />
+          <div className="flex justify-center ">
+            <img
+  src="/public/login1.jpeg"
+  alt="login"
+  className="w-full h-full object-cover"
+/>
           </div>
         </div>
       </div>

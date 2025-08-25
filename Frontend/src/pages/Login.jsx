@@ -50,7 +50,7 @@ const Signup = () => {
       <div className="hidden lg:flex lg:w-1/2 flex-col justify-center items-center p-10">
         <div className="max-w-md text-center">
           <div className="flex justify-center mb-8">
-            <img src="/public/login.jpg" alt="login" />
+            <img src="/public/login1.jpeg" alt="login" />
           </div>
         </div>
       </div>
